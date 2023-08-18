@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienes raices</title>
     <link rel="stylesheet" href="../../build/css/app.css">
-    <link rel="stylesheet" href="./build/css/">
 
 </head>
 <body>
@@ -13,13 +12,13 @@
         <div class="contenedor contenido-header">
             <div class="barra">
                 <a href="../../index.php">
-                    <img src="./build/img/logo.svg" alt="logo">
+                    <img  src="../../build/img/logo.svg" alt="logo">
                 </a>
                 <div class="mobile-menu">
-                    <img src="./build/img/barras.svg" alt="icono menu responsive">
+                    <img src="../../build/img/barras.svg" alt="icono menu responsive">
                 </div>
                 <div class="derecha">
-                    <img class="dark-mode-boton" src="./build/img/dark-mode.svg" alt="">
+                    <img class="dark-mode-boton" src="../../build/img/dark-mode.svg" alt="">
                     <nav class="navegacion">
                         <a href="Nosotros.php">Nosotros</a>
                         <a href="anuncios.php">Anuncios</a>

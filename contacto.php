@@ -1,5 +1,6 @@
 <?php
-include './includes/templates/header.php';
+require './includes/funciones.php';
+incluirtemplate('header');
 
 ?>
 
@@ -50,7 +51,7 @@ include './includes/templates/header.php';
                     <label for="contactar-email">E-mail</label>
                     <input type="radio" name="contacto" id="contactar-email" value="email">
                 </div>
-                <p>Si eligió teléfono, eleja la fecha y la hora</p>
+                <p>Si eligió teléfono, elija la fecha y la hora</p>
 
                 <label for="fecha">Fecha: </label>
                 <input type="date" id="fecha">
@@ -63,6 +64,6 @@ include './includes/templates/header.php';
         </form>
     </main>
 
-    <?php 
-    include './includes/templates/footer.php';
+<?php 
+    incluirtemplate('footer');
 ?>

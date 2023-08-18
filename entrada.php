@@ -1,6 +1,6 @@
 <?php
-include './includes/templates/header.php';
-
+require './includes/funciones.php';
+incluirtemplate('header');
 ?>
 
     <main class="contenedor seccion contenido-centrado">
@@ -18,5 +18,5 @@ include './includes/templates/header.php';
     </main>
 
 <?php 
-    include './includes/templates/footer.php';
+    incluirtemplate('footer');
 ?>

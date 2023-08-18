@@ -9,10 +9,10 @@
 
             <p class="copyright">Todos los derechos Reservados <?php 
             date_default_timezone_set('America/Bogota');
-            echo date('d-m-Y'); 
+            echo date('Y'); 
             ?> &copy;</p>
         </div>
-
+ b
     </footer>
 
     <script src="./build/js/bundle.min.js"></script>
