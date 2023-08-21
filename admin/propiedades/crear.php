@@ -1,4 +1,15 @@
 <?php
+
+//incluir funcion inicio de la super global session_start();
+//conectar con funciones
+require '../../includes/funciones.php';
+incluirtemplate('header');
+$auth = estAutenticado();
+ if(!$auth){
+    header('Location: /');
+    }
+
+
 //conectar a base de datos
 require '../../includes/config/database.php';
 
@@ -116,9 +127,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
 }
 
-//conectar con funciones
-require '../../includes/funciones.php';
-incluirtemplate('header');
+
 
 ?>
 

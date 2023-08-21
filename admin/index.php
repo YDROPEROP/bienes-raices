@@ -1,4 +1,12 @@
 <?php
+
+//incluir funcion inicio de la super global session_start();
+require '../includes/funciones.php';
+$auth = estAutenticado();
+ if(!$auth){
+    header('Location: /');
+    }
+
 //IMPORTAR CONEXION
 require '../includes/config/database.php';
 $db = conectarDB();
@@ -13,9 +21,6 @@ $consulta = mysqli_query($db,$query);
 var_dump(mysqli_fetch_all( $consulta));
 echo "</pre>"; */
 
-//incluir templates
-require '../includes/funciones.php';
-incluirtemplate('header');
 
 //obtener resultado de la url que envia crear.php
 $resultado = $_GET['resultado'] ?? null;
@@ -48,6 +53,8 @@ if($_SERVER["REQUEST_METHOD"]==='POST'){
 
 }
 
+//templates    
+incluirtemplate('header');
 
 ?>
 
